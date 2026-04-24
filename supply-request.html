@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCSS-ARMY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>GCSS-ARMY</h1>
+      <p>CJSOTF-A S-4 SUPPLY REQUEST</p>
+    </header>
+
+    <div class="page-action-bar">
+      <div class="page-action-left">
+        <a href="index.html" class="nav-btn">Home</a>
+      </div>
+      <div class="page-action-right">
+        <button type="button" class="logout-btn" data-logout>Logout</button>
+      </div>
+    </div>
+
+    <main class="layout">
+      <div class="left-column">
+        <section class="panel">
+          <div class="request-title-bar">
+            <div class="request-title-left">
+              <h2>Request ID:</h2>
+              <div id="requestIdDisplay" class="request-id-inline">Generating request ID...</div>
+            </div>
+
+            <div id="requestDateDisplay" class="request-dtg-inline">Loading Zulu DTG...</div>
+          </div>
+
+          <form id="requestForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority">
+                  <option value="">Select priority</option>
+                  <option value="ROUTINE">ROUTINE</option>
+                  <option value="MEDIUM">MEDIUM</option>
+                  <option value="HIGH">HIGH</option>
+                  <option value="EMERGENT">EMERGENT</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="unit">Unit</label>
+                <select id="unit" name="unit">
+                  <option value="">Loading units...</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="requestedBy">Requested By</label>
+                <input
+                  type="text"
+                  id="requestedBy"
+                  name="requestedBy"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="field">
+                <label for="deliveryLocation">Delivery Location</label>
+                <select id="deliveryLocation" name="deliveryLocation">
+                  <option value="">Loading locations...</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field field-full">
+              <label for="requestSummary">Request Summary</label>
+              <textarea
+                id="requestSummary"
+                name="requestSummary"
+                rows="4"
+                placeholder="Describe the request."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <div class="selected-items-block">
+              <h3>Requested Items</h3>
+              <div id="selectedItemsContainer"></div>
+            </div>
+
+            <div class="actions">
+              <button type="button" id="reviewRequestBtn">Review Request</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel hidden-panel">
+          <h2>Compiled Output</h2>
+
+          <div class="output-block">
+            <h3>Request Preview</h3>
+            <pre id="requestPreview">Nothing compiled yet.</pre>
+          </div>
+
+          <div class="output-block">
+            <h3>Arma Code</h3>
+            <pre id="codeOutput">Nothing compiled yet.</pre>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel catalog-panel">
+        <div class="catalog-header">
+          <h2>Catalog</h2>
+          <div id="catalogCount" class="catalog-count"></div>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="field catalog-search-field">
+            <label for="itemSearch">Item Search</label>
+            <input
+              type="text"
+              id="itemSearch"
+              placeholder="Type to filter catalog..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="field selected-catalog-item-field">
+            <label>Selected Item</label>
+            <div id="selectedCatalogItemDisplay" class="selected-catalog-item-display">None selected</div>
+          </div>
+
+          <div class="catalog-action-row">
+            <div class="field catalog-qty-field">
+              <label for="itemQuantity">Quantity</label>
+              <input
+                type="number"
+                id="itemQuantity"
+                min="1"
+                step="1"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="field catalog-add-field">
+              <label>&nbsp;</label>
+              <button type="button" id="addItemBtn" class="small-btn">Add Item</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="catalogContainer" class="catalog-container">
+          Loading catalog...
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCSS-ARMY Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>GCSS-ARMY</h1>
+    </header>
+
+    <div class="logout-bar">
+      <button type="button" class="logout-btn" data-logout>Logout</button>
+    </div>
+
+    <main class="layout review-layout">
+      <section class="panel">
+        <div class="request-title-bar">
+          <div class="request-title-left">
+            <h2>Select Request Type</h2>
+          </div>
+        </div>
+
+        <div class="portal-grid">
+          <a class="portal-card" href="supply-request.html">
+            <div class="portal-card-title">SUPPLY REQUEST</div>
+            <div class="portal-card-subtitle">CJSOTF-A S-4 SUPPLY REQUEST</div>
+          </a>
+
+          <div class="portal-card portal-card-disabled">
+            <div class="portal-card-title">LOGISTICS REQUEST</div>
+            <div class="portal-card-subtitle">CJSOTF-A S-4 LOGISTICS REQUEST</div>
+          </div>
+
+          <div class="portal-card portal-card-disabled">
+            <div class="portal-card-title">SUPPORT REQUEST</div>
+            <div class="portal-card-subtitle">CJSOTF-A OPERATIONS SUPPORT REQUEST</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

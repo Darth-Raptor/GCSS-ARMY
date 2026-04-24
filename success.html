@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCSS-ARMY Submission Complete</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>GCSS-ARMY</h1>
+      <p>CJSOTF-A S-4 SUPPLY REQUEST SUBMITTED</p>
+    </header>
+
+    <div class="page-action-bar">
+      <div class="page-action-left">
+        <a href="index.html" class="nav-btn">Home</a>
+      </div>
+      <div class="page-action-right">
+        <button type="button" class="logout-btn" data-logout>Logout</button>
+      </div>
+    </div>
+
+    <main class="layout review-layout">
+      <section class="panel">
+        <div class="request-title-bar">
+          <div class="request-title-left">
+            <h2>Request ID:</h2>
+            <div id="successRequestId" class="request-id-inline">Loading...</div>
+          </div>
+
+          <div id="successDtg" class="request-dtg-inline">Loading...</div>
+        </div>
+
+        <div class="review-section">
+          <h3>Status</h3>
+          <div id="successStatus" class="review-box">Loading...</div>
+        </div>
+
+        <div class="review-section">
+          <h3>Submission Details</h3>
+          <div id="successDetails" class="review-details-grid"></div>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="newRequestBtn">New Request</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/success.js"></script>
+</body>
+</html>

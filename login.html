@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCSS-ARMY Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page login-page">
+    <main class="layout review-layout">
+      <section class="panel login-panel title-page-panel">
+        <div class="login-card-header">
+          <h1>GCSS-ARMY</h1>
+        </div>
+
+        <div class="request-title-bar login-title-bar">
+          <div class="request-title-left">
+            <h2>Login</h2>
+          </div>
+        </div>
+
+        <form id="loginForm">
+          <div class="login-grid">
+            <div class="field">
+              <label for="loginUsername">Username</label>
+              <input
+                type="text"
+                id="loginUsername"
+                name="loginUsername"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="field">
+              <label for="loginPassword">Password</label>
+              <input
+                type="password"
+                id="loginPassword"
+                name="loginPassword"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <div id="loginError" class="login-error"></div>
+
+          <div class="actions">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/users.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

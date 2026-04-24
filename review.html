@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCSS-ARMY Review Request</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>GCSS-ARMY</h1>
+      <p>CJSOTF-A S-4 SUPPLY REQUEST REVIEW</p>
+    </header>
+
+    <div class="page-action-bar">
+      <div class="page-action-left">
+        <a href="index.html" class="nav-btn">Home</a>
+      </div>
+      <div class="page-action-right">
+        <button type="button" class="logout-btn" data-logout>Logout</button>
+      </div>
+    </div>
+
+    <main class="layout review-layout">
+      <section class="panel">
+        <div class="request-title-bar">
+          <div class="request-title-left">
+            <h2>Request ID:</h2>
+            <div id="reviewRequestId" class="request-id-inline">Loading...</div>
+          </div>
+
+          <div id="reviewDtg" class="request-dtg-inline">Loading...</div>
+        </div>
+
+        <div class="review-section">
+          <h3>Request Details</h3>
+          <div id="reviewDetails" class="review-details-grid"></div>
+        </div>
+
+        <div class="review-section">
+          <h3>Summary</h3>
+          <div id="reviewSummary" class="review-box"></div>
+        </div>
+
+        <div class="review-section">
+          <h3>Requested Items</h3>
+          <div id="reviewItems" class="review-items-list"></div>
+        </div>
+
+        <div class="review-section">
+          <h3>Compiled Arma Code</h3>
+          <pre id="reviewCode">Loading...</pre>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="backToEditBtn">Back to Edit</button>
+          <button type="button" id="submitRequestBtn">Submit Request</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/airtable-config.js"></script>
+  <script src="js/review.js"></script>
+</body>
+</html>
