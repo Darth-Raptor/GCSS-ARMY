@@ -1,17 +1,32 @@
 const RP_USERS = [
   {
-    username: "s4",
-    password: "s4request",
-    displayName: "S-4 Clerk"
+    displayName: "CPT A. Lampe",
+    username: "lampe.a",
+    password: "mevwGvrWQ4R"
   },
   {
-    username: "supply",
-    password: "logistics",
-    displayName: "Supply NCO"
+    displayName: "1LT B. Lap",
+    username: "lap.b",
+    password: "WXknKkNxHfHs"
   },
   {
-    username: "tf20",
-    password: "taskforce20",
-    displayName: "TF20 User"
+    displayName: "CPT S. Oxide",
+    username: "oxide.s",
+    password: "sjSSCvR5FtKy"
+  },
+  {
+    displayName: "MSG M. Collins",
+    username: "collins.m",
+    password: "KtsyHFDkkRW2"
+  },
+  {
+    displayName: "SGM J. Howie",
+    username: "howie.j",
+    password: "gCt9xYyKZ6U8"
+  },
+  {
+    displayName: "COL J. Ford",
+    username: "ford.j",
+    password: "log-in"
   }
 ];
